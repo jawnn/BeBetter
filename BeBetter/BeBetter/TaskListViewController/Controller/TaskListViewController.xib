@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TaskListViewController" customModule="BeBetter" customModuleProvider="target">
+            <connections>
+                <outlet property="addTaskButton" destination="Ca6-GZ-vlk" id="f5s-w0-a2A"/>
+                <outlet property="tableView" destination="ZCZ-hG-ahR" id="OJ7-Wr-gz7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZCZ-hG-ahR">
+                    <rect key="frame" x="0.0" y="44" width="414" height="728"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ca6-GZ-vlk">
+                    <rect key="frame" x="8" y="812" width="398" height="44"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="4zh-08-6jA"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="plus" catalog="system"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="ZCZ-hG-ahR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="1Bx-ZA-cWY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZCZ-hG-ahR" secondAttribute="trailing" id="4uV-hb-XZT"/>
+                <constraint firstAttribute="bottom" secondItem="Ca6-GZ-vlk" secondAttribute="bottom" constant="40" id="KOg-oL-CDn"/>
+                <constraint firstItem="ZCZ-hG-ahR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WF6-ZK-c6U"/>
+                <constraint firstItem="Ca6-GZ-vlk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="mAM-Be-OJD"/>
+                <constraint firstItem="Ca6-GZ-vlk" firstAttribute="top" secondItem="ZCZ-hG-ahR" secondAttribute="bottom" constant="40" id="nRi-LB-aDD"/>
+                <constraint firstAttribute="trailing" secondItem="Ca6-GZ-vlk" secondAttribute="trailing" constant="8" id="rWf-Mu-0KA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+    </resources>
+</document>
